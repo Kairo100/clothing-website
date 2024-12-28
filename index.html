@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloths Web page</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel="stylesheet" href="swiper-11.0.6/package/swiper-bundle.min.css">
+     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+     
+    </head>
+<body>
+    <header  id="header">
+        <nav class="nav__container container">
+            <div class="nav__logo">
+                SHOP
+            </div>
+            <div  class="nav__menu">
+                <li class="nav__list" >
+                    <ul class="nav__items" >
+                       <a href="#home"  class="nav__link  "> <span class="material-symbols-outlined i">
+                        home
+                        </span>
+                    <span>HOME</span></a>
+                    </ul>
+                    <ul class="nav__items">
+                        <a href="#new" class="nav__link"><span class="material-symbols-outlined i">
+                            release_alert
+                            </span>
+                        <span>NEW</span></a>
+                    </ul>
+                    <ul class="nav__items">
+                        
+                        <a href="#collections"  class="nav__link">
+                            <span class="material-symbols-outlined i">
+                                collections_bookmark
+                                </span>
+                            <span>COLLECTIONS</span>
+                        </a>
+                      
+                    </ul>
+                    <ul class="nav__items">
+                        <a href="#products"  class="nav__link"><span class="material-symbols-outlined i">
+                           CATEGORY
+                            </span>
+                        <span>PRODUCTS</span>
+                    </a>
+                   
+                   
+                </li>
+                <!--<span class="material-symbols-outlined">
+                    light_mode
+                    </span>-->
+                      </ul>
+            </div>
+        <i class="ri-moon-line change-theme " id="theme-buttom"></i>
+             
+                
+        </nav>
+    </header>
+<main class="main">
+    <section class="home section  active-link" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    New Clothing <br>
+               Collection
+                </h1>
+                <p class="home__desription">
+                    The new collection of clothing from <br>
+              the best brands this year.
+                </p>
+                <a href="#new" class="button_link">
+                    Explore <span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                </a>
+            </div>
+           <div class="home__images">
+            <img src="img/home1.png" alt="">
+            <img src="img/home2.png" alt="">
+           </div>
+        </div>
+    </section>
+
+    <section class="new section " id="new">
+        <h2 class="section__title"> New Categories</h2>
+         <div class="new__container container grid">
+            <article class="new__card">
+                <img src="img/new1.png" alt="" class="new__img">
+                <a href="#" class="new__link">
+                    <div class="new__data">
+                        <h2 class="new__title">
+                            Hoodie & Sweatshirt
+                        </h2>
+                        <span class="new__subtitle">Winter collection</span>
+                    </div>
+                    <span class="material-symbols-outlined i">
+                        arrow_forward
+                        </span>
+                </a>
+            </article>
+            <article class="new__card">
+                <img src="img/new2.png" alt="" class="new__img">
+                <a href="#" class="new__link">
+                    <div class="new__data">
+                        <h2 class="new__title">
+                            Pants & Jackets
+                        </h2>
+                        <span class="new__subtitle">Winter collection</span>
+                    </div>
+                    <span class="material-symbols-outlined i">
+                        arrow_forward
+                        </span>
+                </a>
+            </article>
+            <article class="new__card">
+                <img src="img/new3.png" alt="" class="new__img">
+                <a href="#" class="new__link">
+                    <div class="new__data">
+                        <h2 class="new__title">
+                            Coats & Coat Sets
+                        </h2>
+                        <span class="new__subtitle">Winter collection</span>
+                    </div>
+                    <span class="material-symbols-outlined i">
+                        arrow_forward
+                        </span>
+                </a>
+            </article>
+         </div>
+    </section>
+
+    <section class="collection section " id="collections">
+
+        <div class="collection__container container ">
+            <div class="collection__explore">
+                <div class="collectio__data-men">
+                    <h2 class="collection__title">Men <br>
+                        Collection</h2>
+                    <a href="#" class="button_link">
+                        Explore Clothes
+                        <span class="material-symbols-outlined i">
+                            arrow_forward
+                            </span>
+                    </a>
+                       
+                </div>
+                <img src="img/collection1.png" alt="">
+                
+              </div>
+              <div class="collection__explore">
+                <img src="img/collection2.png" alt="">
+                <div class="collectio__data-women">
+             
+                    <h2 class="collection__title">Women <br>
+                        Collection</h2>
+                    <a href="#" class="button_link">
+                        Explore Clothes
+                        <span class="material-symbols-outlined i">
+                            arrow_forward
+                            </span>
+                    </a>
+                    
+                </div>
+              
+        </div>
+        </div>
+    </section>
+
+
+    <!--**********Products section*****************-->
+    <section class="products_section  section" id="products">
+        <h2 class="section__title">
+            Best Products
+        </h2>
+       <div class="products__container container swiper">
+        <div class="swiper-wrapper">
+            <article class="products__card swiper-slide">
+                <img src="img/product1.png" alt="" class="product__img">
+                <h2 class="products__title">
+                    Gotland black Jacket
+                </h2>
+                <span class="product__price">
+                    $124.99
+                </span>
+            </article>
+
+
+            <article class="products__card swiper-slide">
+                <img src="img/product2.png" alt="" class="product__img">
+                <h2 class="products__title">
+                    Black Sports Shorts
+                </h2>
+                <span class="product__price">
+                    $34.99
+                </span>
+            </article>
+
+            <article class="products__card swiper-slide">
+                <img src="img/product3.png" alt="" class="product__img">
+                <h2 class="products__title">
+                    Knox Quilted Jacket
+                </h2>
+                <span class="product__price">
+                    $97.99
+                </span>
+            </article>
+
+            <article class="products__card  swiper-slide">
+                <img src="img/product4.png" alt="" class="product__img">
+                <h2 class="products__title">
+                    Blue Sport Pants
+               
+                </h2>
+                <span class="product__price">
+                    $69.99
+                </span>
+            </article>
+        </div>
+       </div>
+       <h2 class="section__title">Brands We Sell</h2>
+   <div class="brand__container container grid">
+   
+    <img src="img/logo1.png" alt="" class="brand__img">
+    <img src="img/logo2.png" alt="" class="brand__img">
+    <img src="img/logo3.png" alt="" class="brand__img">
+    <img src="img/logo4.png" alt="" class="brand__img">
+
+   </div>
+    
+    </section>
+    
+</main>
+
+<footer class="footer section">
+    <div class="footer__container container grid">
+        <div>
+            <a href="#" class="footer__logo">
+                Shop
+            </a>
+            <p class="footer__description">Committed to
+                bringing you the <br> 
+                best clothing from popular <br>
+                brands.</p>
+        </div>
+        <div class="footer__content">
+            <div>
+                <h3 class="footer__title">
+                    Company
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" class="footer__links">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Category</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Contact info</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3 class="footer__title">
+                    Blog
+                </h3>
+                <ul>
+                    <li>
+                        <a href="#" class="footer__links">Events</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Popular news</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__links">Recent news</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer__title">
+                    Office
+                </h3>
+             <p class="footer__information">
+                Monday - Saturday <br>
+                9AM - 10PM
+             </p>
+            </div>
+            <div>
+                <h3 class="footer__title">
+                    Contact us
+                </h3>
+              <ul class="footer__social">
+                <a href="#" class="footer__social-link"  target="_blank">
+                <img src="img/facebook.png" alt="" class="i">
+                </a>
+                 
+                <a href="#" class="footer__social-link" target="_blank">
+            <img src="img/instagram.png"alt="">
+                </a>
+
+                <a href="#" class="footer__social-link"  target="_blank">
+                <img src="img/twitter.png" alt="">
+                </a>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__info container">
+        <span class="footer__copy">
+            &#169; Kairo_naser. All rigths reserved
+        </span>
+        <a href="#" class="footer__privacy">
+            Terms & Conditions
+        </a>
+    </div>
+</footer>
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line scrollup__icon"></i>
+</a>
+<script src="responsive-clothing-landing-page-main/responsive-clothing-landing-page-main/assets/js/swiper-bundle.min.js"></script> 
+
+   <script src="script.js"></script>
+<script src="swiper-11.0.6/package/swiper-bundle.min.js"></script>
+</body>
+</html>
